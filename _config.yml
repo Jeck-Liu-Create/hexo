@@ -3,17 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Jeck Liu
+# subtitle: 'Debug the World, Code for Life'
+# 主頁subtitle
 subtitle: ''
-description: ''
+description: 'AI学习记录 |PyTorch源码解读与论文复现'
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: Jeck Liu
+language: zh
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: http://tclyldx.org
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

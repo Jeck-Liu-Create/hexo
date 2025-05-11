@@ -11,18 +11,29 @@
 
 nav:
   # Navigation bar logo image
+  # 导航栏标志图像
   logo:
   display_title: true
   # Whether to fix navigation bar
-  fixed: false
+  # 是否固定导航栏
+  fixed: true
 
 menu:
-  # Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  首頁: / || fas fa-home
+  时间轴: /archives/ || fas fa-archive
+  # 标签: /tags/ || fas fa-tags
+  # 分类: /categories/ || fas fa-folder-open
+  # 清单||fa fa-heartbeat:
+    # 音乐: /music/ || fas fa-music
+    # 照片: /Gallery/ || fas fa-images
+    # 电影: /movies/ || fas fa-video
+    # 友链: /link/ || fas fa-link
+    # 关于: /about/ || fas fa-heart
+
+
 
 # --------------------------------------
+# Code Blocks Settings
 # Code Blocks Settings
 # --------------------------------------
 
@@ -40,19 +51,21 @@ code_blocks:
   # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
   shrink: false
   fullpage: false
+  highlight_shrink: true
+
 
 # Social media links
 # Formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
+  fab fa-github: https://github.com/Jeck-Liu-Create || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
 # --------------------------------------
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /img/favicon.ico
 
 avatar:
   img: /img/butterfly-icon.png
@@ -65,13 +78,13 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img:
+index_img: /img/pexels-jason-pittman.jpg
 
 # The banner image of archive page
 archive_img:
 
 # Note: tag page, not tags page
-tag_img:
+tag_img: 
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
@@ -87,7 +100,7 @@ category_img:
 category_per_img:
 
 # The background image of footer
-footer_img: false
+footer_img: /img/pexels-chaitaastic.jpg
 
 # Website Background
 # Can set it to color or image url
@@ -143,26 +156,28 @@ post_meta:
 # The position of site info, eg: 300px/300em/300rem/10%
 index_site_info_top:
 # The height of top_img, eg: 300px/300em/300rem
-index_top_img_height:
+index_top_img_height: 400px
 
 # The subtitle on homepage
+# 主页上的副标题
 subtitle:
-  enable: false
-  # Typewriter Effect
+  enable: true
+  # Typewriter Effect (打字效果)
   effect: true
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
-  # Source - Call the third-party service API (Chinese only)
-  # It will show the source first, then show the content of sub
-  # Choose: false/1/2/3
-  # false - disable the function
-  # 1 - hitokoto.cn
-  # 2 - https://api.aa1.cn/doc/yiyan.html
-  # 3 - jinrishici.com
+  # source 調用第三方服務
+  # false 關閉調用
+  # 1  調用一言網的一句話（簡體） https://hitokoto.cn/
+  # 2  調用一句網（簡體） http://yijuzhan.com/
+  # 3  調用今日詩詞（簡體） https://www.jinrishici.com/
+  # subtitle 會先顯示 source , 再顯示 sub 的內容
   source: false
-  # If you close the typewriter effect, the subtitle will only show the first line of sub
+  # 如果關閉打字效果，subtitle 只會顯示 sub 的第一行文字
   sub:
+    - 莫舍己道&#44;勿扰他心
+    - Code with Conviction, Debug with Compassion
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -256,7 +271,7 @@ noticeOutdate:
 footer:
   owner:
     enable: true
-    since: 2019
+    since: 2025
   custom_text:
   # Copyright of theme and framework
   copyright: true
@@ -283,8 +298,8 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: 关注我
+      link: https://github.com/Jeck-Liu-Create
   card_announcement:
     enable: true
     content: This is my Blog
@@ -357,17 +372,18 @@ rightside_bottom:
 
 # Conversion between Traditional and Simplified Chinese
 translate:
-  enable: false
-  # The text of a button
-  default: 繁
-  # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
-  defaultEncoding: 2
-  # Time delay
+  enable: true
+  # 默认按钮显示文字(网站是简体，应设置为'default: 繁')
+  default: 简
+  #网站默认语言，1: 繁体中文, 2: 简体中文
+  defaultEncoding: 1
+  #延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
   translateDelay: 0
-  # The text of the button when the language is Simplified Chinese
+  #当文字是简体时，按钮显示的文字
   msgToTraditionalChinese: '繁'
-  # The text of the button when the language is Traditional Chinese
-  msgToSimplifiedChinese: '簡'
+  #当文字是繁体时，按钮显示的文字
+  msgToSimplifiedChinese: '简'
+
 
 # Read Mode
 readmode: true
