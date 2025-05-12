@@ -65,10 +65,10 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: ../../img/favicon.ico
+favicon: img/favicon.ico
 
 avatar:
-  img: ../../img/butterfly-icon.png
+  img: img/butterfly-icon.png
   effect: false
 
 # Disable all banner images
@@ -78,7 +78,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img: ../../img/pexels-jason-pittman.jpg
+index_img: img/pexels-jason-pittman.jpg
 
 # The banner image of archive page
 archive_img:
@@ -100,11 +100,11 @@ category_img:
 category_per_img:
 
 # The background image of footer
-footer_img: ../../img/pexels-chaitaastic.jpg
+footer_img: img/pexels-chaitaastic.jpg
 
 # Website Background
 # Can set it to color or image url
-background: ../../img/pexels-googledeepmind.jpg
+background: img/pexels-googledeepmind.jpg
 
 cover:
   # Disable the cover or not
@@ -117,14 +117,14 @@ cover:
 
 # Replace Broken Images
 error_img:
-  flink: ../../img/friend_404.gif
-  post_page: ../../img/404.jpg
+  flink: img/friend_404.gif
+  post_page: img/404.jpg
 
 # A simple 404 page
 error_404:
   enable: false
   subtitle: 'Page Not Found'
-  background: ../../img/error-page.png
+  background: img/error-page.png
 
 post_meta:
   # Home Page
@@ -224,10 +224,10 @@ reward:
   enable: false
   text:
   QR_code:
-    # - img: ../../img/wechat.jpg
+    # - img: img/wechat.jpg
     #   link:
     #   text: wechat
-    # - img: ../../img/alipay.jpg
+    # - img: img/alipay.jpg
     #   link:
     #   text: alipay
 
